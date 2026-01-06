@@ -1,11 +1,11 @@
 [package]
 name = "m24512"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2024"
 authors = ["kimbotto"]
 description = "A no_std driver for the M24512 EEPROM"
 license = "MIT OR Apache-2.0"
-repository = "https://github.com/kimbotto/np-evb-rust"
+repository = "https://github.com/kimbotto/m24512-rs"
 readme = "README.md"
 keywords = ["eeprom", "m24512", "embedded-hal", "driver"]
 categories = ["embedded", "hardware-support"]
