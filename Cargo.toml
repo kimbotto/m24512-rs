@@ -1,0 +1,24 @@
+[package]
+name = "m24512"
+version = "0.1.0"
+edition = "2024"
+authors = ["kimbotto"]
+description = "A no_std driver for the M24512 EEPROM"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/kimbotto/np-evb-rust"
+readme = "README.md"
+keywords = ["eeprom", "m24512", "embedded-hal", "driver"]
+categories = ["embedded", "hardware-support"]
+
+[dependencies]
+embedded-hal = "1.0.0"
+embedded-hal-async = "1.0.0"
+embedded-storage = "0.3.1"
+embedded-storage-async = "0.4.1"
+embassy-time = "0.5.0"
+heapless = "0.9.2"
+defmt = { version = "1.0.1", optional = true }
+
+[features]
+default = []
+defmt = ["dep:defmt", "heapless/defmt"]
